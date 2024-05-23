@@ -2,32 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.learnMore{
+  @apply  text-[16px]
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.row{
+  @apply flex justify-center items-center w-[26px] h-[26px] ml-3  rounded-full text-center
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.btn{
+  @apply px-8 py-4 text-[18px]  rounded-md text-white
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.card{
+  @apply p-6 flex flex-col gap-4 rounded-lg
 }
+.btn2{
+  @apply w-full rounded px-[30px] py-[14px] bg-white text-[#4328EB] hover:bg-gray-100
+} 
